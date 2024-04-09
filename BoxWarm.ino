@@ -2,7 +2,7 @@
 #include <GyverSegment.h> // Display
 #include <microDS18B20.h> // Thermocouple
 #include <GyverPWM.h> // PWM
-#include <GyverPID.h>
+#include <GyverPID.h> // PI regulator
 
 
 
@@ -17,7 +17,6 @@ int DoWarmOld;
 int DoWarmNew;
 int Warm;
 int sp;
-int Call = 0;
 
 long displaySetTempTime;
 
@@ -37,16 +36,9 @@ void loop() {
   sensor.requestTemp();
 
 
-  //Fast turn
-  if (eb.fast()){
-    if (eb.right()) DoWarmNew += 10;
-    if (eb.left()) DoWarmNew -= 10;
-  }
-  else{
-    //Slow turn
-    if (eb.right()) DoWarmNew += 1;
-    if (eb.left()) DoWarmNew -= 1;
-  }
+  //Turn
+  if (eb.right()) DoWarmNew += 1;
+  if (eb.left()) DoWarmNew -= 1;
 
 
   //Limited cycle
@@ -90,23 +82,10 @@ void loop() {
   //Start the heating program by clicking
   if (eb.click()){
     sp = 1;
-    Call = 0;
     Warm = DoWarmOld; //Fix
     regulator.setpoint = Warm; //--> PID Themperature maintenc
   }
 
- if (sp == 1) analogWrite(3, (int)regulator.getResultTimer());  // отправляем на реле
-
- if ((Themperature > Warm - 2) && (Themperature < Warm + 2) && (Call = 0)){
-  Call = 1;
-  static uint32_t tmr2 = millis();
-  if (millis() - tmr2 >= 5000){
-    tmr2 = millis();
-    pulseIn(10, HIGH);
-    }
- }
-
-  //Serial.println((int)regulator.getResultTimer());
-
+ if (sp == 1) analogWrite(3, (int)regulator.getResultTimer());  // PWM --> Relay
 
 }
