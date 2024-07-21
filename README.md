@@ -1,27 +1,27 @@
-##  Травление плат по-новому: компактное, эффективное, доступное! 
+## PCB etching in a new way: compact, efficient, affordable!
 
-Представляем вам проект, созданный в рамках Тихоокеанской проектной школы ДДО ДВФУ: устройство для травления плат в растворе хлорного железа.
+We present to you a project created within the framework of the Pacific Project School of the DDO of DVFU: a device for etching boards in ferric chloride solution.
 
-### Что делает наше устройство особенным?
+### What makes our device special?
 
-- **Полностью герметичный сосуд**: предотвращает испарение раствора и обеспечивает безопасность работы.
-- **Точный контроль температуры**: ПИ-регулятор, работающий на базе Arduino Nano, обеспечивает стабильную и заданную температуру травления.
-- **Энергоэффективность**: устройство работает от стандартной сети и потребляет минимальное количество энергии.
-- **Простота использования**: просто выберите нужную температуру с помощью энкодера, и устройство начнет работу.
-- **Модульность**: вы можете легко настроить размер и мощность устройства в соответствии с вашими потребностями.
+- Fully sealed vessel: Prevents solution evaporation and ensures safe operation.
+- Precise temperature control: A PI controller based on Arduino Nano provides stable and set etching temperature.
+- Energy efficiency: The device operates from a standard network and consumes minimal energy.
+- Ease of use: Simply choose the desired temperature using the encoder, and the device will begin working.
+- Modularity: You can easily adjust the size and power of the device to suit your needs.
 
-### Преимущества нашего устройства:
+### Advantages of our device:
 
-- **Доступная цена**: всего от 5000 рублей, что значительно дешевле, чем готовые решения на рынке.
-- **Высокая эффективность**: точный контроль температуры и герметичный сосуд обеспечивают оптимальные условия для травления плат.
-- **Безопасность**: герметичная конструкция исключает контакт с раствором и обеспечивает безопасную работу.
-- **Универсальность**: подойдет как для домашних мастеров, так и для небольших производств.
+- Affordable price: Starting from just 5000 rubles, significantly cheaper than ready-made solutions on the market.
+- High efficiency: Precise temperature control and a sealed vessel ensure optimal conditions for etching boards.
+- Safety: The sealed design eliminates contact with the solution and ensures safe operation.
+- Versatility: Suitable for both home hobbyists and small productions.
 
-### Что в проекте:
+### What's in the project:
 
-- Схема устройства
-- Исходный код для Arduino Nano
+- Device diagram
+- Source code for Arduino Nano
 
-### Попробуйте наши решения!
+### Try our solutions!
 
-Мы уверены, что наше устройство станет отличным выбором для всех, кто занимается радиоэлектроникой и нуждается в эффективном и доступном решении для травления плат.
+We are confident that our device will be a great choice for anyone involved in electronics and needing an efficient and affordable solution for etching boards.
