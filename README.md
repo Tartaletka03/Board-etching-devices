@@ -1,6 +1,6 @@
 ## PCB etching in a new way: compact, efficient, affordable!
 
-We present to you a project created within the framework of the Pacific Project School of the DDO of DVFU: a device for etching boards in ferric chloride solution.
+We present to you a project created within the framework of the Pacific Project School of the Department of Pre-University Education, Far Eastern Federal University: a device for etching boards in ferric chloride solution.
 
 ### What makes our device special?
 
